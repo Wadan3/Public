@@ -12,7 +12,7 @@
   Build:
     gcc -std=c11 -O2 -Wall -Wextra -pedantic puzzle_lock.c -o puzzle_lock
   Run:
-    ./puzzle_lock
+    ./puzzle_lock.
 */
 
 #include <stdio.h>
