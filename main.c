@@ -80,7 +80,7 @@ int main(void) {
     char code[CODE_LEN + 1];
     generate_code(code);
 
-    puts("🔐 Puzzle Lock (C)");
+    puts(" Puzzle Lock (C)");
     puts("Guess the 3-digit code (000-999).");
     puts("Hint format: [right place] [wrong place]");
     puts("Example: 1 2 means 1 digit correct spot, 2 digits correct but wrong spots.");
@@ -110,13 +110,13 @@ int main(void) {
         score_guess(code, guess, &right_place, &wrong_place);
 
         if (right_place == CODE_LEN) {
-            printf("✅ Unlocked! Code was %s. Solved in %d attempt(s).\n", code, attempt);
+            printf(" Unlocked! Code was %s. Solved in %d attempt(s).\n", code, attempt);
             return 0;
         }
 
         printf("Hint: %d %d\n\n", right_place, wrong_place);
     }
 
-    printf("❌ Out of attempts. The code was %s.\n", code);
+    printf(" Out of attempts. The code was %s.\n", code);
     return 0;
 }
